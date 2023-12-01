@@ -1,8 +1,7 @@
 // Define an array of audio file URLs
 const audioFiles = [
-    'audio1.mp3',
-    'audio2.mp3',
-    'audio3.mp3',
+    'audio/audio1.mp3',
+    'audio/audio2.mp3',
     // Add more audio file URLs as needed
   ];
   
