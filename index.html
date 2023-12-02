@@ -21,6 +21,8 @@
         #playButton {
             position: absolute;
             top: 0px;
+            left: 50%;
+      transform: translate(-50%, -50%);
             padding: 8px 20px;
             font-size: 22px;
             font-family: 'Courier New', Courier, monospace;
@@ -35,6 +37,8 @@
         #submitButton {
             position: absolute;
             top: 260px;
+            left: 50%;
+      transform: translate(-50%, -50%);
             padding: 8px 20px;
             font-size: 22px;
             font-family: 'Courier New', Courier, monospace;
@@ -54,7 +58,9 @@
 
         p[contenteditable="true"] {
             position: relative;
-            top: 70px;
+            top: 110px;
+            left: 50%;
+      transform: translate(-50%, -50%);
             font-family: 'Courier New', Courier, monospace;
             font-weight: bold;
             font-size: 22px;
@@ -93,7 +99,7 @@
         <p style="color: #3880D2; 
                 font-size: 22px;
                 position: relative;
-                top: 80px;">
+                top: 60px; text-align: center;">
             TYPE THE TRANSCRIPT HERE</p>
         <p id="editableParagraph" contenteditable="true"></p>
         <input type="submit" id="submitButton" value="SUBMIT">
