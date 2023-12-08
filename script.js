@@ -128,6 +128,15 @@ function clearEditableParagraph() {
 const submitButton = document.getElementById('submitButton');
 submitButton.addEventListener('click', showPlayButton);
 submitButton.addEventListener('click', clearEditableParagraph);
+submitButton.addEventListener('click', showCheckmark); // Add this line to show the checkmark
 
-
-
+// Function to show the checkmark symbol for 3 seconds
+function showCheckmark() {
+  const checkmarkSymbol = document.getElementById('checkmarkSymbol');
+  checkmarkSymbol.style.fontSize = '40pt';
+  checkmarkSymbol.style.color = '#0082D8';
+  checkmarkSymbol.style.display = 'inline'; // Display the checkmark
+  setTimeout(function() {
+      checkmarkSymbol.style.display = 'none'; // Hide the checkmark after 3 seconds
+  }, 3000); // 3 seconds timeout
+}

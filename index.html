@@ -22,7 +22,7 @@
             position: absolute;
             top: 0px;
             left: 50%;
-      transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
             padding: 8px 20px;
             font-size: 22px;
             font-family: 'Courier New', Courier, monospace;
@@ -38,7 +38,7 @@
             position: absolute;
             top: 260px;
             left: 50%;
-      transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
             padding: 8px 20px;
             font-size: 22px;
             font-family: 'Courier New', Courier, monospace;
@@ -60,7 +60,7 @@
             position: relative;
             top: 110px;
             left: 50%;
-      transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
             font-family: 'Courier New', Courier, monospace;
             font-weight: bold;
             font-size: 22px;
@@ -89,6 +89,17 @@
             background-color: #0082D8;
             color: black;
         }
+
+        #checkmarkSymbol {
+            position: fixed;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 26pt;
+            color: #0082D8;
+            display: none;
+            /* Hide initially */
+        }
     </style>
 </head>
 
@@ -104,6 +115,7 @@
         <p id="editableParagraph" contenteditable="true"></p>
         <input type="submit" id="submitButton" value="SUBMIT">
         <script src="script.js"></script>
+        <div id="checkmarkSymbol">&#10003;</div>
     </div>
 </body>
 
